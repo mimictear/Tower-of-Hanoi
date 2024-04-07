@@ -7,13 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		802F1D922BC30696000D8843 /* Tower_of_HanoiApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 802F1D912BC30696000D8843 /* Tower_of_HanoiApp.swift */; };
+		802F1D922BC30696000D8843 /* TowerOfHanoiApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 802F1D912BC30696000D8843 /* TowerOfHanoiApp.swift */; };
 		802F1D942BC30696000D8843 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 802F1D932BC30696000D8843 /* ContentView.swift */; };
 		802F1D962BC30697000D8843 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 802F1D952BC30697000D8843 /* Assets.xcassets */; };
 		802F1D992BC30697000D8843 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 802F1D982BC30697000D8843 /* Preview Assets.xcassets */; };
 		802F1DA32BC30697000D8843 /* Tower_of_HanoiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 802F1DA22BC30697000D8843 /* Tower_of_HanoiTests.swift */; };
 		802F1DAD2BC30697000D8843 /* Tower_of_HanoiUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 802F1DAC2BC30697000D8843 /* Tower_of_HanoiUITests.swift */; };
 		802F1DAF2BC30697000D8843 /* Tower_of_HanoiUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 802F1DAE2BC30697000D8843 /* Tower_of_HanoiUITestsLaunchTests.swift */; };
+		802F1DBC2BC308EB000D8843 /* RodView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 802F1DBB2BC308EB000D8843 /* RodView.swift */; };
+		802F1DBE2BC30B77000D8843 /* Disk.swift in Sources */ = {isa = PBXBuildFile; fileRef = 802F1DBD2BC30B77000D8843 /* Disk.swift */; };
+		802F1DC12BC30F08000D8843 /* DiskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 802F1DC02BC30F08000D8843 /* DiskView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,7 +38,7 @@
 
 /* Begin PBXFileReference section */
 		802F1D8E2BC30696000D8843 /* Tower of Hanoi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Tower of Hanoi.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		802F1D912BC30696000D8843 /* Tower_of_HanoiApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tower_of_HanoiApp.swift; sourceTree = "<group>"; };
+		802F1D912BC30696000D8843 /* TowerOfHanoiApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TowerOfHanoiApp.swift; sourceTree = "<group>"; };
 		802F1D932BC30696000D8843 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		802F1D952BC30697000D8843 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		802F1D982BC30697000D8843 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -44,6 +47,10 @@
 		802F1DA82BC30697000D8843 /* Tower of HanoiUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tower of HanoiUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		802F1DAC2BC30697000D8843 /* Tower_of_HanoiUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tower_of_HanoiUITests.swift; sourceTree = "<group>"; };
 		802F1DAE2BC30697000D8843 /* Tower_of_HanoiUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tower_of_HanoiUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		802F1DBB2BC308EB000D8843 /* RodView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RodView.swift; sourceTree = "<group>"; };
+		802F1DBD2BC30B77000D8843 /* Disk.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Disk.swift; sourceTree = "<group>"; };
+		802F1DBF2BC30D34000D8843 /* Tower-of-Hanoi-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Tower-of-Hanoi-Info.plist"; sourceTree = SOURCE_ROOT; };
+		802F1DC02BC30F08000D8843 /* DiskView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiskView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,10 +101,14 @@
 		802F1D902BC30696000D8843 /* Tower of Hanoi */ = {
 			isa = PBXGroup;
 			children = (
-				802F1D912BC30696000D8843 /* Tower_of_HanoiApp.swift */,
+				802F1DBF2BC30D34000D8843 /* Tower-of-Hanoi-Info.plist */,
+				802F1D912BC30696000D8843 /* TowerOfHanoiApp.swift */,
 				802F1D932BC30696000D8843 /* ContentView.swift */,
 				802F1D952BC30697000D8843 /* Assets.xcassets */,
 				802F1D972BC30697000D8843 /* Preview Content */,
+				802F1DBB2BC308EB000D8843 /* RodView.swift */,
+				802F1DBD2BC30B77000D8843 /* Disk.swift */,
+				802F1DC02BC30F08000D8843 /* DiskView.swift */,
 			);
 			path = "Tower of Hanoi";
 			sourceTree = "<group>";
@@ -257,8 +268,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				802F1DC12BC30F08000D8843 /* DiskView.swift in Sources */,
+				802F1DBE2BC30B77000D8843 /* Disk.swift in Sources */,
+				802F1DBC2BC308EB000D8843 /* RodView.swift in Sources */,
 				802F1D942BC30696000D8843 /* ContentView.swift in Sources */,
-				802F1D922BC30696000D8843 /* Tower_of_HanoiApp.swift in Sources */,
+				802F1D922BC30696000D8843 /* TowerOfHanoiApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -425,11 +439,12 @@
 				DEVELOPMENT_TEAM = 4DZQ8R87XF;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Tower-of-Hanoi-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -454,11 +469,12 @@
 				DEVELOPMENT_TEAM = 4DZQ8R87XF;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Tower-of-Hanoi-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
